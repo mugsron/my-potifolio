@@ -15,7 +15,7 @@ Open `index.html` directly in a browser, or run `node server.cjs` and visit http
 
 ## Content boundaries
 
-The illustrated site and interactive concept are labelled demonstrations, not client work. No client names, testimonials, invented results, or photographs are included. ITN is recorded as completed, and the remaining CCNA studies and diploma as in progress.
+The illustrated site and interactive concept are labelled demonstrations, not client work. Metrak Real Estate and Girls Lifeline Organisation are included as websites Ronald built and manages, at his request. The supplied promotional poster is preserved unchanged; the About portrait uses a CSS crop of that same poster. No testimonials or invented results are included. ITN is recorded as completed, and the remaining CCNA studies and diploma as in progress.
 
 This phase is frontend only. There is no CMS, account system, database, or contact form backend. WhatsApp and telephone links open the visitor's external apps. A CMS can be connected in a later phase.
 
