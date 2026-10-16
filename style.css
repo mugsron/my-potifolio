@@ -14,3 +14,10 @@
 .portrait{height:auto;overflow:visible;background:transparent}
 .portrait img{position:static;display:block;width:100%;max-width:100%;height:auto}
 .portrait figcaption{position:static}
+
+/* Standalone transparent portrait, shown at its natural proportions. */
+.profile-photo{background:transparent;box-shadow:none;width:min(100%,300px)}
+.profile-photo img{height:350px;width:100%;object-fit:contain;border-radius:0}
+.portrait{background:#e5ebf8}
+.portrait img{height:380px;width:100%;object-fit:contain}
+
