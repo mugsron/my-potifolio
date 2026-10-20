@@ -15,9 +15,21 @@ Open `index.html` directly in a browser, or run `node server.cjs` and visit http
 
 ## Content boundaries
 
-The illustrated site and interactive concept are labelled demonstrations, not client work. Metrak Real Estate and Girls Lifeline Organisation are included as websites Ronald built and manages, at his request. The supplied promotional poster is preserved unchanged; the About portrait uses a CSS crop of that same poster. No testimonials or invented results are included. ITN is recorded as completed, and the remaining CCNA studies and diploma as in progress.
+The illustrated site and interactive concept are labelled demonstrations, not client work. Metrak Real Estate and Girls Lifeline Organisation are included as websites Ronald built and manages, at his request. The supplied promotional poster is preserved unchanged; the standalone portrait is displayed at its natural proportions. No testimonials or invented results are included. ITN is recorded as completed, and the remaining CCNA studies and diploma as in progress.
 
-This phase is frontend only. There is no CMS, account system, database, or contact form backend. WhatsApp and telephone links open the visitor's external apps. A CMS can be connected in a later phase.
+The site remains static: no CMS, account system, database, or self-hosted backend. The optional contact form posts directly to Formspree, which supplies the third-party backend. WhatsApp, telephone, and email links use visitors' external apps and remain available. AI skills are listed in the About section.
+
+## Contact form: external setup required
+
+1. Create a Formspree account and form at https://formspree.io/. Set and verify the recipient inbox (mugalyaronald77@gmail.com, if desired) as prompted by Formspree.
+2. Copy the endpoint from the form's Integration section.
+3. In index.html replace https://formspree.io/f/YOUR_FORM_ID with that endpoint. This public form ID is not a secret. Never add account passwords, API secrets, or SMTP credentials to these public files.
+4. Deploy the same static files through the existing GitHub Pages workflow. No build, package, or hosting change is required.
+5. Submit a real enquiry from the published site, check the Formspree result and dashboard, and verify receipt in the intended inbox, including spam. Test an invalid email and an empty required field. Test a failed/offline submission and use the existing contact links as fallback.
+
+Until a valid endpoint is configured, the form remains disabled and explains the alternative contact methods. app.js enables it only for a configured Formspree endpoint. Without JavaScript, use the existing contact links. Native HTML validation checks required fields and email format. Submission navigates to Formspree's response page; this site does not claim delivery or clear the message before submission. The _gotcha honeypot helps filter basic spam; review service spam settings and current usage limits in your account.
+
+Visitor names, emails, and messages are processed by Formspree. Review its privacy terms and account retention settings before activation. No service account was created and no email delivery has been verified as part of this code change.
 
 ## GitHub Pages
 
